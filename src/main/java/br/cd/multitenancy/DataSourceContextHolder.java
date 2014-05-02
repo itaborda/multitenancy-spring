@@ -1,6 +1,6 @@
-package br.com.cd.mvo.orm.multitenancy;
+package br.cd.multitenancy;
 
-import br.com.cd.mvo.util.ThreadLocalMapUtil;
+import br.com.cd.util.ThreadLocalMapUtil;
 
 public class DataSourceContextHolder {
 

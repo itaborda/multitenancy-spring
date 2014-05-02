@@ -1,4 +1,4 @@
-package br.cd.mvo4j.test.multitenancy.internal;
+package br.cd.multitenancy.internal;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

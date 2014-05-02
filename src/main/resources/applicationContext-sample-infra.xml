@@ -49,7 +49,6 @@
 		<entry key="hibernate.dialect" value="#{jdbc['hibernate.dialect']}" />
 	</util:map>
 
-	<bean id="infraManager"
-		class="br.cd.mvo4j.test.multitenancy.internal.InfraManager" />
+	<bean id="infraManager" class="br.cd.multitenancy.internal.InfraManager" />
 
 </beans>
