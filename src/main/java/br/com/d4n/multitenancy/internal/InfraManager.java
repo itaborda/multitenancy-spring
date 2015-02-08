@@ -1,4 +1,4 @@
-package br.cd.multitenancy.internal;
+package br.com.d4n.multitenancy.internal;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

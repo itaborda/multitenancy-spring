@@ -1,4 +1,4 @@
-package br.cd.multitenancy.internal;
+package br.com.d4n.multitenancy.internal;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

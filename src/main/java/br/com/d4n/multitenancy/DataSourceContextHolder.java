@@ -1,6 +1,6 @@
-package br.cd.multitenancy;
+package br.com.d4n.multitenancy;
 
-import br.com.cd.util.ThreadLocalMapUtil;
+import br.com.d4n.utils.ThreadLocalMapUtil;
 
 public class DataSourceContextHolder {
 

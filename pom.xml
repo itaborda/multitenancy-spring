@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>br.com.cd</groupId>
+	<groupId>br.com.d4n</groupId>
 	<artifactId>multitenancy-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
@@ -184,7 +184,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>br.com.cd</groupId>
+			<groupId>br.com.d4n</groupId>
 			<artifactId>commons-utils</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

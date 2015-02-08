@@ -16,17 +16,17 @@
 	</bean>
 
 	<bean id="ds1" parent="parentDataSource">
-		<property name="driverClassName" value="#{jdbc['database.driver']}" />
-		<property name="url" value="#{jdbc['database.url']}" />
-		<property name="username" value="#{jdbc['database.user']}" />
-		<property name="password" value="#{jdbc['database.pass']}" />
+		<property name="driverClassName" value="#{jdbc['databases.ds1.driver']}" />
+		<property name="url" value="#{jdbc['databases.ds1.url']}" />
+		<property name="username" value="#{jdbc['databases.ds1.user']}" />
+		<property name="password" value="#{jdbc['databases.ds1.pass']}" />
 	</bean>
 
 	<bean id="ds2" parent="parentDataSource">
-		<property name="driverClassName" value="..." />
-		<property name="url" value="...." />
-		<property name="username" value="..." />
-		<property name="password" value="..." />
+		<property name="driverClassName" value="#{jdbc['databases.ds2.driver']}" />
+		<property name="url" value="#{jdbc['databases.ds2.url']}" />
+		<property name="username" value="#{jdbc['databases.ds2.user']}" />
+		<property name="password" value="#{jdbc['databases.ds2.pass']}" />
 	</bean>
 
 	<bean id="parentDataSource"
@@ -40,7 +40,7 @@
 		<entry key="DS_2" value="ds2" />
 	</util:map>
 
-	<bean id="routerDataSource" class="br.cd.multitenancy.RouterDataSource">
+	<bean id="routerDataSource" class="br.com.d4n.multitenancy.RouterDataSource">
 		<property name="defaultTargetDataSource" ref="ds1" />
 		<property name="targetDataSources" ref="targetDataSources" />
 	</bean>
@@ -104,7 +104,7 @@
 	<context:load-time-weaver aspectj-weaving="on" />
 	<context:spring-configured />
 
-	<bean id="loginInterceptor" class="br.cd.multitenancy.internal.LoginInterceptor">
+	<bean id="loginInterceptor" class="br.com.d4n.multitenancy.internal.LoginInterceptor">
 		<property name="infraManager" ref="infraManager" />
 	</bean>
 

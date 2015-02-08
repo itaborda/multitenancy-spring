@@ -1,4 +1,4 @@
-package br.cd.multitenancy.internal;
+package br.com.d4n.multitenancy.internal;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -7,7 +7,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import br.cd.multitenancy.DataSourceContextHolder;
+import br.com.d4n.multitenancy.DataSourceContextHolder;
 
 @Aspect
 public class LoginInterceptor {

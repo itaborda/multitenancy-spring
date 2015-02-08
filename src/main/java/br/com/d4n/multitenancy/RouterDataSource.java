@@ -1,4 +1,4 @@
-package br.cd.multitenancy;
+package br.com.d4n.multitenancy;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
